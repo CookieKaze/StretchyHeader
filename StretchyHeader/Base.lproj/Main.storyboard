@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1MM-1I-JhH" id="h7U-Vh-DxE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rnw-6X-Ihh">
@@ -58,8 +58,16 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="rnw-6X-Ihh" secondAttribute="bottom" constant="5" id="nWk-Ox-rlq"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="jQm-Cn-ODc" id="n3b-MI-mwS"/>
+                                            <outlet property="headlineLabel" destination="GrD-fk-2gz" id="hh8-Ev-lXV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eDY-8M-g91"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IlB-ZW-fQF"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
